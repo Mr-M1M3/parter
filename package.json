@@ -13,12 +13,6 @@
     "busboy": "^1.6.0"
   },
   "type": "module",
-  "devDependencies": {
-    "nodemon": "^2.0.18"
-  },
-  "scripts": {
-    "test:dev": "nodemon examples/server.js"
-  },
   "bugs": {
     "url": "https://github.com/obboy/parter/issues"
   },
