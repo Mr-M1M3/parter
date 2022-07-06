@@ -1,9 +1,12 @@
 {
-  "name": "partrer",
-  "version": "0.0.1",
+  "name": "parter",
+  "version": "1.0.0",
   "description": "Promise based multipart parser",
   "main": "index.js",
-  "repository": "https://github.com/obboy/parter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obboy/parter.git"
+  },
   "author": "m1m3@obboy",
   "license": "MIT",
   "dependencies": {
@@ -16,5 +19,21 @@
   },
   "scripts": {
     "test:dev": "nodemon examples/server.js"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/obboy/parter/issues"
+  },
+  "homepage": "https://github.com/obboy/parter#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "parter",
+    "multipart",
+    "busboy",
+    "multipart-parser",
+    "parser",
+    "body",
+    "request-body"
+  ]
 }
