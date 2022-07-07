@@ -1,5 +1,5 @@
 {
-  "name": "parter",
+  "name": "@obboy/parter",
   "version": "1.0.0",
   "description": "Promise based multipart parser",
   "main": "index.js",
