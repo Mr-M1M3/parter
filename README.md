@@ -29,6 +29,22 @@ async function requestHandler(req, res){
     // other things
 }
 ```
+When we try to log body, we will get an object similar to this
+
+```javascript
+{
+        fields:{
+                name: <String>,
+                value: <String>,
+                info: <Object>
+        },
+        files:{
+                name: <String>,
+                content: <Buffer>,
+                info: <Object>
+        }
+}
+```
 
 Notice, we pass in `req` as the first argument. The `req` we pass in must be an instance of
 `IncomingMessage` from node `http` module or it can be an instance of `Request` constructor.
@@ -38,10 +54,10 @@ As, parter uses `busboy`, this is the same configuration object you would pass
 in busboy. But, you can, of course pass additional properties. 
 
 ```javascript
-options.errorOnMoreFields = Boolean
-options.errorOnMoreFiles = Boolean
-options.errorOnMoreParts = Boolean
-options.errorOnLargerFileSize = Boolean
+options.errorOnMoreFields = <Boolean>
+options.errorOnMoreFiles = <Boolean>
+options.errorOnMoreParts = <Boolean>
+options.errorOnLargerFileSize = <Boolean>
 ```
 - `errorOnMoreFields` 
 
